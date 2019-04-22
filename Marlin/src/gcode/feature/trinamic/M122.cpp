@@ -36,8 +36,8 @@ void GcodeSuite::M122() {
     if (parser.seen('S'))
       tmc_set_report_status(parser.value_bool());
     else
-  #endif
       tmc_report_all();
+  #endif
 
 }
 
